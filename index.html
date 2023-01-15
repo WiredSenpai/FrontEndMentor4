@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+</head>
+<body>
+
+  <!-- Rating state start -->
+<div class="state__start">
+
+  <div class="icon__div">
+    <img src="images/icon-star.svg" alt="orange star icon" class="star__icon">
+  </div>
+  <h1 class="heading">How did we do?</h1>
+
+  <p class="text">Please let us know how we did with your support request. All feedback is appreciated 
+  to help us improve our offering!</p>
+
+<ul>
+  <li> <button class="btn">1</button> </li>
+  <li><button class="btn">2</button></li>
+  <li><button class="btn">3</button></li>
+  <li><button class="btn">4</button></li>
+  <li><button class="btn">5</button></li>
+</ul>
+
+ <button class="submit__button">SUBMIT</button>
+</div>
+
+  <!-- Rating state end -->
+
+ <!-- Thank you state start -->
+
+  <div class="state__end hidden">  
+      <div class="image__div">
+      <img class="image" src="images/illustration-thank-you.svg" alt="A beautiful thank you picture in a phone icon">
+      </div>
+    <div class="highlight"><p class="text selected">You selected
+       <span id="selected__value"></span>
+        out of 5</p></div>
+
+  <h1 class="thank__you heading">Thank you!</h1>
+
+  <p class="last text">We appreciate you taking the time to give a rating. If you ever need more support, 
+    don’t hesitate to get in touch!</p>
+
+    <button class="restart">RESTART</button>
+
+  <!-- Thank you state end -->
+  </div>
+
+ <script src="index.js"></script>
+</body>
+</html>
